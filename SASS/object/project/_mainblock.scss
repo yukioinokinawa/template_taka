@@ -1,0 +1,65 @@
+.p-mainblock__wrapper {
+    @media screen and (min-width:765px) {
+        display: flex;
+    }
+}
+
+.p-mainblock {
+    min-height: 64rem;
+    width: auto;
+    margin: 20px;
+    padding: 0 15px;
+    background-size: cover;
+    background-position: center center;
+
+    >h1 {
+        padding-top: 5rem;
+        font-size: 41px;
+        font-weight: bold;
+        color: #ffffff;
+        position: relative;
+    }
+
+    >h1::after {
+        content: '';
+        width: 5rem;
+        height: 4px;
+        display: inline-block;
+        background-color: #FFFFFF;
+        position: absolute;
+        bottom: -5rem;
+        left: 0;
+    }
+
+    &__a-wrapper {
+        height: 64rem;
+        padding-bottom: 15px;
+        display: grid;
+        align-content: end;
+        gap: 15px;
+        word-break: break-all;
+
+        article {
+            background-color: rgba(255, 255, 255, 0.7);
+            min-height: 120px;
+
+            h2 {
+                font-size: 2.2rem;
+                font-weight: bold;
+                color: #3C2A10;
+                padding: 5px;
+            }
+
+            p {
+                font-size: 1.6rem;
+                font-weight: normal;
+                color: #3C2A10;
+                padding: 5px;
+            }
+        }
+    }
+
+    @media screen and(min-width:600px) {
+        flex: 1;
+    }
+}

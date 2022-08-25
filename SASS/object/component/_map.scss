@@ -1,0 +1,99 @@
+/**Map*/
+
+.c-map {
+    min-height: 69rem;
+    background-color: #000000;
+    background-image: url("/images/map.png");
+    background-size: cover;
+
+    &__wrapper {
+        position: relative;
+        min-height: 69rem;
+
+        .c-map__textarea {
+            position: relative;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            padding: 4rem;
+            font-family: "M+1";
+            color: #FFFFFF;
+            line-height: 3rem;
+            overflow-wrap: anywhere;
+
+            >h1 {
+                font-size: 3rem;
+                position: relative;
+            }
+
+            >h1::after {
+                content: '';
+                width: 6rem;
+                height: 2px;
+                display: inline-block;
+                background-color: #FFFFFF;
+                position: absolute;
+                bottom: -3rem;
+                left: 0;
+            }
+
+            >p {
+                padding-top: 5rem;
+                font-size: 1.4rem;
+                word-break: break-all;
+            }
+        }
+
+        .c-map__shade {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            height: 400px;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+
+
+    }
+
+    @media screen and(min-width:560px) {
+        min-height: 40rem;
+
+        &__wrapper {
+            min-height: 40rem;
+
+            .c-map__shade {
+                height: 100%;
+            }
+        }
+
+    }
+
+    @media screen and(min-width:960px) {
+        min-height: 65rem;
+
+        &__wrapper {
+            max-width: 50rem;
+            min-height: 65rem;
+
+            .c-map__textarea {
+
+                >h1::after {
+                    content: '';
+                    width: 6rem;
+                    height: 2px;
+                    display: inline-block;
+                    background-color: #FFFFFF;
+                    position: absolute;
+                    bottom: -5rem;
+                    left: 0;
+                }
+
+                >p {
+                    padding-top: 10rem;
+                }
+            }
+        }
+    }
+}

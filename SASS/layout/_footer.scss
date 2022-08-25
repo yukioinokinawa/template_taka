@@ -1,0 +1,22 @@
+/**Footer*/
+
+footer {
+    height: 150px;
+    width: 100vw;
+    background-color: #9D8670;
+    color: #FFFFFF;
+    text-align: center;
+
+    >p {
+        font-family: "M+1";
+        font-size: 20px;
+        font-weight: normal;
+        padding: 4rem 0 3.4rem 0;
+    }
+
+    >small {
+        font-family: "M+1";
+        font-size: 14px;
+        font-weight: normal;
+    }
+}

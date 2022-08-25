@@ -1,0 +1,56 @@
+/*Pagenation**/
+
+.u-pagenation {
+    min-width: 33rem;
+    height: 2rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem 2rem;
+
+    >p {
+        font-size: 1.6rem;
+        font-family: "Roboto";
+        color: #707070;
+        display: none;
+    }
+
+    >a {
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: #707070;
+    }
+
+    >ul {
+        display: none;
+
+        >p {
+            font-size: 1.6rem;
+        }
+
+        >li {
+            height: 3rem;
+            width: 3rem;
+            border: solid;
+            list-style: none;
+            text-align: center;
+        }
+    }
+
+    @media screen and(min-width:560px) {
+        max-width: 55rem;
+        margin: 6rem auto;
+
+        >p {
+            display: inherit;
+        }
+
+        >a {
+            display: none;
+        }
+
+        >ul {
+            display: contents;
+        }
+    }
+
+}

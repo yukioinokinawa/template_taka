@@ -1,0 +1,52 @@
+/*archivetop**/
+
+.p-archivetop {
+    height: 230px;
+    background-image: url("/images/takeout.png");
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+    position: relative;
+
+    &__shade {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    &__wrapper {
+        height: 230px;
+        display: block;
+        margin-top: -1rem;
+
+        >p {
+            color: #fff;
+            position: relative;
+            margin-left: 25px;
+            padding-top: 10rem;
+            font-size: 3.6rem;
+            font-family: "M+1";
+            font-weight: bold;
+
+            >small {
+                font-size: 1.6rem;
+            }
+        }
+
+        @media screen and(min-width:560px) {
+
+            >p {
+                display: flex;
+
+                >small {
+                    height: 3.6rem;
+                    padding: 0.5rem 2rem;
+                }
+            }
+
+        }
+
+    }
+
+}

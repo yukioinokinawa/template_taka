@@ -1,0 +1,72 @@
+$title-color: #707070;
+$jtitle-color: #3C2A10;
+
+/*
+ブレークポイント
+PC 960px〜
+タブレット　560px〜
+**/
+
+/*_bace.scss*/
+html {
+	font-size: 62.5%;
+	line-height: 2.5rem;
+	height: 100%;
+	scroll-behavior: smooth;
+}
+
+body {
+	color: #707070;
+	font-size: 1rem;
+	font-weight: bold;
+	font-family: "Noto Sans JP", "MyYuGothicM, YuGothic", "-apple-system", BlinkMacSystemFont, "Hiragino kaku Gothic ProN", Meiryo, Verdana, arial, helvetica, sans-serif, M+PLUS+1p;
+	min-width: 350px;
+	width: 100%;
+	overflow-x: hidden;
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	vertical-align: middle;
+	border-style: none;
+}
+
+a {
+	color: #131D34;
+	display: block;
+	text-decoration: none;
+	transition: 0.4s;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+h1 {
+	font-family: "M+1";
+	padding-top: 5rem;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+.f-bace__container {
+	display: flex;
+}
+
+#shadow {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgb(0, 0, 0, 0.5);
+	z-index: 5;
+	display: none;
+
+	&.go {
+		display: inherit;
+	}
+}
+
+//参照　https://zenn.dev/yurukei20/books/10e7322a762178/viewer/c5c998

@@ -1,0 +1,24 @@
+/*Menu**/
+
+.c-menubutton {
+    display: block;
+    margin-left: auto;
+    padding: 1rem;
+
+    >p {
+        font-family: "Robot";
+        font-size: 2rem;
+        color: #707070;
+        font-weight: bold;
+    }
+
+    @media screen and(min-width:960px) {
+        pointer-events: none;
+        display: none;
+
+        >p {
+            font-size: 3.4;
+        }
+    }
+
+}

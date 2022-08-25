@@ -1,0 +1,64 @@
+.p-pagetop {
+    height: 220px;
+
+    .singleimg {
+        background-image: url("/images/cheeseburger.png");
+        background-size: cover;
+        background-attachment: scroll;
+    }
+
+    .pageimg {
+        background-image: url("/images/shop.png");
+        background-position: center;
+        background-size: cover;
+        background-attachment: scroll;
+        position: relative;
+    }
+
+    &__wrapper {
+        height: 220px;
+        display: block;
+        margin-top: -1rem;
+
+        >h1 {
+            font-size: 3.6rem;
+            font-family: "M+1";
+            font-weight: bold;
+            padding: 10rem 0 0 3rem;
+        }
+
+    }
+
+    @media screen and(min-width:560px) {
+        height: 50rem;
+
+        &__wrapper {
+            height: 50rem;
+
+            >h1 {
+                line-height: 50rem;
+                padding: 0;
+                padding: auto 0;
+                padding-left: 8rem;
+                font-size: 6rem;
+            }
+        }
+    }
+
+    @media screen and(min-width:960px) {
+        height: 50rem;
+
+        &__wrapper {
+            height: 50rem;
+            margin-top: -1rem;
+
+            >p {
+                line-height: 50rem;
+                display: inherit;
+                font-size: 4rem;
+                margin: auto 0;
+                margin-left: 86px;
+            }
+        }
+    }
+}
