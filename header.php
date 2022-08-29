@@ -19,7 +19,8 @@
                 </button>
 
                 <div class="l-header">
-                    <p>Hamburger</p>
+                    <p> <?php bloginfo('name'); ?>
+                    </p>
                     <?php get_search_form(); ?>
                 </div>
             </header>

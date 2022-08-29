@@ -1,0 +1,62 @@
+/*
+Default style for WP-PageNavi plugin
+
+http://wordpress.org/extend/plugins/wp-pagenavi/
+*/
+
+/*Pagenation**/
+.u-pagenation {
+	min-width: 33rem;
+	height: 2rem;
+	display: flex;
+	justify-content: space-between;
+	margin: 3rem 2rem;
+}
+
+.u-pagenation>p {
+	font-size: 1.6rem;
+	font-family: "Roboto";
+	color: #707070;
+	display: none;
+}
+
+.u-pagenation>a {
+	font-size: 1.6rem;
+	font-weight: 400;
+	color: #707070;
+}
+
+.u-pagenation>ul {
+	display: none;
+}
+
+.u-pagenation>ul>p {
+	font-size: 1.6rem;
+}
+
+.u-pagenation>ul>li {
+	height: 3rem;
+	width: 3rem;
+	border: solid;
+	list-style: none;
+	text-align: center;
+}
+
+@media screen and (min-width: 560px) {
+	.u-pagenation {
+		max-width: 55rem;
+		margin: 6rem auto;
+	}
+
+	.u-pagenation>p {
+		display: inherit;
+	}
+
+	.u-pagenation>a {
+		display: none;
+	}
+
+	.u-pagenation>ul {
+		display: contents;
+	}
+}
