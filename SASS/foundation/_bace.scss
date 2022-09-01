@@ -50,6 +50,50 @@ h1 {
 	color: #FFFFFF;
 }
 
+h2 {
+	font-size: 28px;
+	padding-top: 30px;
+}
+
+h3 {
+	font-size: 24px;
+	padding-top: 30px;
+}
+
+h4,
+h5,
+h6 {
+	font-size: 20px;
+	padding-top: 30px;
+}
+
+p {
+	font-size: 16px;
+}
+
+ol {
+	li {
+		ol {
+			li {
+				padding-left: 3rem;
+			}
+		}
+	}
+}
+
+ul {
+	list-style: none;
+
+	li {
+
+		ul {
+			li {
+				padding-left: 3rem;
+			}
+		}
+	}
+}
+
 .f-bace__container {
 	display: flex;
 }
@@ -67,6 +111,64 @@ h1 {
 	&.go {
 		display: inherit;
 	}
+}
+
+.brockquote {
+	margin-top: 3rem;
+	background-color: #F5F5F5;
+	padding: 3rem 2rem;
+	font-size: 1.6rem;
+	font-weight: 400;
+
+
+	>p {
+		padding: 5rem 5rem 10rem 5rem;
+	}
+
+	>a {
+		position: relative;
+		padding-left: 6rem;
+		margin: 6rem 0;
+	}
+
+	>a::before {
+		content: "出典元：";
+		color: #3C2A10;
+		font-size: 1.6rem;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 100;
+	}
+}
+
+table {
+	margin-top: 3rem;
+
+	>tbody {
+
+		>tr {
+
+			>td {
+				width: calc(100vw / 3)*2;
+				border: solid 1px #707070;
+				font-size: 1.6rem;
+				font-weight: 400;
+				padding-left: 2rem;
+				height: 7rem;
+			}
+		}
+	}
+}
+
+code {
+	width: 100%;
+	display: inline-block;
+	background-color: #F5F5F5;
+	font-size: 1.6rem;
+	color: #3C2A10;
+	font-weight: 400;
+	padding: 3rem;
 }
 
 //参照　https://zenn.dev/yurukei20/books/10e7322a762178/viewer/c5c998

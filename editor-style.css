@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+/*
+ブレークポイント
+PC 960px〜
+タブレット　560px〜
+**/
+/*_bace.scss*/
+
+body {
+    color: #707070;
+    font-size: 10px;
+    font-weight: bold;
+    font-family: "Roboto", "M+1";
+    min-width: 350px;
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+a {
+    color: #131D34;
+    display: block;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h1 {
+    font-family: "M+1";
+    padding-top: 50px;
+    font-weight: bold;
+    color: #FFFFFF;
+}

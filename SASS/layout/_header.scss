@@ -12,7 +12,7 @@ header {
         flex-direction: column;
         display: inline-block;
 
-        >p {
+        >a {
             font-family: "Roboto";
             font-size: 4rem;
             font-weight: bold;
@@ -20,101 +20,13 @@ header {
             margin: 2rem;
         }
 
-        &__search {
-            height: 4.6rem;
-            width: 32rem;
-            margin: 3rem;
-            display: inline-block;
-            position: relative;
-
-
-            >input {
-                align-items: center;
-                height: 4rem;
-                border: 1px solid;
-                border-color: #707070;
-                font-family: "M+1";
-                font-size: 150%;
-                color: #707070;
-            }
-
-
-            .banner {
-                width: calc(32rem/5)*3;
-                border-radius: 10px;
-                background-color: #FFFfff;
-                padding-left: 5rem;
-            }
-
-            .btn {
-                width: calc(32rem/5)*1;
-                border-radius: 10px;
-                margin-left: 1rem;
-                background-color: #F2EDE9;
-            }
-        }
-
-        &__search::before {
-            content: "";
-            width: 3rem;
-            height: 3rem;
-            background: url("/images/glass.png") no-repeat center center/ auto 100%;
-            display: inline-block;
-            position: absolute;
-            top: 5px;
-            left: 4rem;
-        }
-
         @media screen and(min-width:560px) {
             height: 217px;
             max-width: 100%;
             margin: 0;
 
-            >p {
-                font-size: 4rem;
-            }
-
-            &__search {
-                width: 54rem;
-                height: 4rem;
-                margin-left: 20px;
-                display: inline-block;
-                position: relative;
-
-                >input {
-                    align-items: center;
-                    height: 4.6rem;
-                    border: 1px solid;
-                    border-color: #707070;
-                    font-family: "M+1";
-                    font-size: 150%;
-                    color: #707070;
-                }
-
-                .banner {
-                    width: calc(54rem/5)*3;
-                    border-radius: 10px;
-                    background-color: #FFFfff;
-                }
-
-                .btn {
-                    width: calc(54rem/5)*1;
-                    border-radius: 10px;
-                    margin-left: 1rem;
-                    background-color: #F2EDE9;
-                }
-            }
-
-            &__search::before {
-                content: "";
-                width: 3rem;
-                height: 3rem;
-                max-width: 100%;
-                background: url("/images/glass.png") no-repeat center center;
-                display: inline-block;
-                position: absolute;
-                left: 6rem;
-                top: 1rem;
+            >a {
+                font-size: 5rem;
             }
         }
 
@@ -127,54 +39,159 @@ header {
             align-items: center;
             margin: 0;
 
-            >p {
+            >a {
                 font-size: 6rem;
-                margin-left: 4rem;
+            }
+        }
+    }
+
+    .searchform {
+        height: 4.6rem;
+        width: 32rem;
+        margin: 3rem;
+        display: inline-block;
+        position: relative;
+
+        .inp-hom .but-inp-hom {
+            align-items: center;
+            height: 4rem;
+        }
+
+        .inp-hom {
+            height: 4.6rem;
+            width: 19.2rem;
+            border-radius: 10px;
+            background-color: #FFFfff;
+            padding-left: 5rem;
+            border: 1px solid;
+            border-color: #707070;
+            font-family: "M+1";
+            font-size: 150%;
+            color: #707070;
+        }
+
+        .but-inp-hom {
+            height: 4.6rem;
+            width: 6.4rem;
+            border-radius: 10px;
+            margin-left: 1rem;
+            background-color: #F2EDE9;
+            border: 1px solid;
+            border-color: #707070;
+            font-family: "M+1";
+            font-size: 150%;
+            color: #707070;
+        }
+
+        @media screen and(min-width:560px) {
+
+            height: 4rem;
+            width: 54rem;
+            margin-left: 20px;
+            display: inline-block;
+            position: relative;
+
+
+            .inp-hom {
+                width: 32.4rem;
+                border-radius: 10px;
+                background-color: #FFFfff;
             }
 
-            &__search {
-                width: 54rem;
+            .but-inp-hom {
+                width: 10.8rem;
+                border-radius: 10px;
+                margin-left: 1rem;
+                background-color: #F2EDE9;
+            }
+
+            .inp-hom .but-inp-hom {
+                align-items: center;
                 height: 4rem;
+                border: 1px solid;
+                border-color: #707070;
+                font-family: "M+1";
+                font-size: 150%;
+                color: #707070;
+            }
+        }
+
+        @media screen and(min-width:960px) {
+            .searchform {
+                height: 4rem;
+                width: 54rem;
                 margin-left: 20px;
                 display: inline-block;
                 position: relative;
 
-                >input {
-                    align-items: center;
-                    height: 4rem;
-                    border: 1px solid;
-                    border-color: #707070;
-                    font-family: "M+1";
-                    font-size: 150%;
-                    color: #707070;
-                }
 
-                .banner {
-                    width: calc(54rem/5)*3;
+                .inp-hom {
+                    width: 32.4rem;
                     border-radius: 10px;
                     background-color: #FFFfff;
                 }
 
-                .btn {
-                    width: calc(54rem/5)*1;
+
+                .but-inp-hom {
+                    width: 10.8rem;
                     border-radius: 10px;
                     margin-left: 1rem;
                     background-color: #F2EDE9;
                 }
+
             }
 
-            &__search::before {
+            .inp-hom .but-inp-hom {
+                align-items: center;
+                height: 4.6rem;
+                border: 1px solid;
+                border-color: #707070;
+                font-family: "M+1";
+                font-size: 150%;
+                color: #707070;
+            }
+
+        }
+
+        .search::before {
+            content: "";
+            width: 3rem;
+            height: 3rem;
+            background: url("/wp-content/themes/template_taka/images/glass.png") no-repeat center center/ auto 100%;
+            display: inline-block;
+            position: absolute;
+            top: 8px;
+            left: 4rem;
+        }
+
+        @media screen and(min-width:560px) {
+            .search::before {
                 content: "";
-                width: 4rem;
-                height: 4rem;
-                max-width: 100%;
-                background: url("/images/glass.png") no-repeat center center;
+                width: 3rem;
+                height: 3rem;
+                background: url("/wp-content/themes/template_taka/images/glass.png") no-repeat center center/ auto 100%;
                 display: inline-block;
                 position: absolute;
-                left: 5rem;
-                top: auto;
+                top: 8px;
+                left: 4rem;
+            }
+        }
+
+        @media screen and(min-width:960px) {
+            .search::before {
+                content: "";
+                width: 3rem;
+                height: 3rem;
+                background: url("/wp-content/themes/template_taka/images/glass.png") no-repeat center center/ auto 100%;
+                display: inline-block;
+                position: absolute;
+                top: 8px;
+                left: 4rem;
             }
         }
     }
+
+
+
 
 }

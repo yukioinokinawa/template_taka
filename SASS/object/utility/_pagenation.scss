@@ -1,56 +1,75 @@
 /*Pagenation**/
 
-.u-pagenation {
-    min-width: 33rem;
-    height: 2rem;
+.wp-pagenavi {
     display: flex;
     justify-content: space-between;
-    margin: 3rem 2rem;
+    margin: 3rem 1rem;
 
-    >p {
-        font-size: 1.6rem;
-        font-family: "Roboto";
-        color: #707070;
-        display: none;
-    }
-
-    >a {
+    a,
+    span {
         font-size: 1.6rem;
         font-weight: 400;
         color: #707070;
+        border: solid 1px #707070;
+        list-style: none;
+        padding: 8px 15px;
+        margin: 0 2px;
     }
 
-    >ul {
-        display: none;
+    a:hover,
+    span.current {
+        color: #FFF;
+        background-color: #3C2B1C;
+        border-color: #3C2B1C;
+    }
+}
 
-        >p {
+a.nextpostslink,
+a.previouspostslink {
+    border: none;
+}
+
+a.page,
+span.current,
+span.pages {
+    display: none;
+}
+
+@media screen and (min-width: 560px) {
+    .wp-pagenavi {
+        display: flex;
+        justify-content: center;
+        margin: 3rem 2rem;
+
+        a,
+        span {
             font-size: 1.6rem;
-        }
-
-        >li {
-            height: 3rem;
-            width: 3rem;
-            border: solid;
+            font-weight: 400;
+            color: #707070;
+            border: solid 1px #707070;
             list-style: none;
-            text-align: center;
+            padding: 8px 15px;
+            margin: 0 2px;
+        }
+
+        a:hover,
+        span.current {
+            color: #FFF;
+            background-color: #3C2B1C;
+            border-color: #3C2B1C;
         }
     }
 
-    @media screen and(min-width:560px) {
-        max-width: 55rem;
-        margin: 6rem auto;
 
-        >p {
-            display: inherit;
-        }
-
-        >a {
-            display: none;
-        }
-
-        >ul {
-            display: contents;
-        }
+    a.page,
+    span.current,
+    span.pages {
+        display: inherit;
     }
 
+    span.pages,
+    a.nextpostslink,
+    a.previouspostslink {
+        border: none;
+    }
 }

@@ -1,30 +1,27 @@
 .p-pagetop {
     height: 220px;
 
-    .singleimg {
-        background-image: url("/images/cheeseburger.png");
-        background-size: cover;
-        background-attachment: scroll;
-    }
-
-    .pageimg {
-        background-image: url("/images/shop.png");
-        background-position: center;
-        background-size: cover;
-        background-attachment: scroll;
-        position: relative;
-    }
 
     &__wrapper {
         height: 220px;
         display: block;
         margin-top: -1rem;
+        position: relative;
+
+        >img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: left;
+        }
 
         >h1 {
+            color: #FFF;
             font-size: 3.6rem;
             font-family: "M+1";
             font-weight: bold;
             padding: 10rem 0 0 3rem;
+            position: absolute;
         }
 
     }

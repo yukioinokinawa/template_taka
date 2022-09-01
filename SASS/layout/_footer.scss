@@ -6,6 +6,8 @@ footer {
     background-color: #9D8670;
     color: #FFFFFF;
     text-align: center;
+    display: flex;
+    flex-flow: column;
 
     >p {
         font-family: "M+1";
@@ -18,5 +20,30 @@ footer {
         font-family: "M+1";
         font-size: 14px;
         font-weight: normal;
+        margin-top: 3rem;
     }
+}
+
+.menu-footer-container {
+    font-family: "M+1";
+    font-size: 20px;
+    font-weight: normal;
+    color: #FFF;
+    margin-top: 3rem;
+
+    a {
+        color: #FFF;
+    }
+
+    ul {
+        text-align: center;
+
+        li {
+            list-style: none;
+            margin-right: 1rem;
+            display: inline-block;
+        }
+
+    }
+
 }

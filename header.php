@@ -19,8 +19,7 @@
                 </button>
 
                 <div class="l-header">
-                    <p> <?php bloginfo('name'); ?>
-                    </p>
+                    <a href="<?php echo home_url('/'); ?>"><?php bloginfo('name'); ?></a>
                     <?php get_search_form(); ?>
                 </div>
             </header>

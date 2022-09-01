@@ -4,8 +4,14 @@
 
 
 <div class="p-pagetop">
-    <div class="p-pagetop__wrapper pageimg">
-        <h1> ショップについて </h1>
+    <div class="p-pagetop__wrapper">
+        <h1> <?php the_title(); ?> </h1>
+        <?php
+        if (has_post_thumbnail()) :
+            the_post_thumbnail();
+        else :
+        ?><div class="no-thumbnail"></div><?php endif; ?>
+
     </div>
 </div>
 <!--Top-->

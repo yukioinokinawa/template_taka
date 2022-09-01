@@ -12,8 +12,6 @@
 </div>
 <!--Tophead-->
 
-
-
 <div class="l-main">
     <div class="p-archive__wrapper">
         <article class="p-archive">
@@ -25,31 +23,11 @@
         </article>
     </div>
 
+    <?php wp_pagenavi(); ?>
 
-    <div class="u-pagenation">
-        <p>page 1/10</p>
-        <a href="<?php wp_pagenavi(); ?>">＜＜前へ</a>
-        <ul>
-            <p>
-                << </p>
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
-                    <li>4</li>
-                    <li>5</li>
-                    <li>6</li>
-                    <li>7</li>
-                    <li>8</li>
-                    <li>9</li>
-                    <p> >> </p>
-        </ul>
-        <a href="<?php wp_pagenavi(); ?>">次へ＞＞</a>
-    </div>
 </div>
 </div>
 <!--Main-->
-
-
 
 <?php get_sidebar(); ?>
 

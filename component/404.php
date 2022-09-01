@@ -17,10 +17,6 @@
 <div class="l-main">
     <div class="p-archive__wrapper">
         <article class="p-archive">
-            <article class="p-archive__intro">
-                <h1><?php single_cat_title(); ?></h1>
-                <p><?php echo category_description(); ?></p>
-            </article>
 
             <?php if (have_posts()) : ?>
                 <h1 class="page-title"><?php printf(__('検索結果%s', 'wiingsearch'), '<span>『' . esc_html(get_search_query()) . '』</span>'); ?></h1>
@@ -38,7 +34,7 @@
                 ?>
             <?php else :
                 echo '<h2 class="page-title">検索結果：一致するページは見つかりませんでした。</h2>';
-                get_template_part('component', '404'); // 結果がない場合にcontent_none.phpを表示させる場合.
+                get_template_part('content', 'none'); // 結果がない場合にcontent_none.phpを表示させる場合.
             endif; ?>
 
             <?php get_template_part('component/archive'); ?>
