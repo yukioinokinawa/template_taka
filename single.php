@@ -34,6 +34,9 @@
                     else :
                         ?> <p>表示する記事がありません</p><?php
                                             endif; ?>
+                 <?php if (is_404()) : ?>
+                     <?php get_template_part('component/404'); ?>
+                 <?php endif; ?>
 
          </div>
          </article>
