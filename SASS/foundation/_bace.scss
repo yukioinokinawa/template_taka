@@ -72,17 +72,19 @@ p {
 }
 
 ol {
+	padding-left: 2rem;
+
 	li {
+
 		ol {
-			li {
-				padding-left: 3rem;
-			}
+			padding-left: 3rem;
 		}
 	}
 }
 
 ul {
 	list-style: none;
+	padding-left: 2rem;
 
 	li {
 
@@ -97,6 +99,7 @@ ul {
 .f-bace__container {
 	display: flex;
 }
+
 
 #shadow {
 	position: fixed;
