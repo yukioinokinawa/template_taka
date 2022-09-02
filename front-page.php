@@ -1,5 +1,3 @@
-         <?php body_class(); ?>
-
          <?php get_header(); ?>
          <!--Header-->
 
