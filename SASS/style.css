@@ -449,7 +449,7 @@ header .searchform .search::before {
 .c-map {
   min-height: 69rem;
   background-color: #000000;
-  background-image: url("/wp-content/themes/template_taka/images/map.png");
+  background-image: url("images/map.png");
   background-size: cover;
 }
 .c-map__wrapper {
@@ -530,11 +530,11 @@ header .searchform .search::before {
 }
 
 .c-backimg1 {
-  background-image: url("/wp-content/themes/template_taka/images/takeout.png");
+  background-image: url("images/takeout.png");
 }
 
 .c-backimg2 {
-  background-image: url("/wp-content/themes/template_taka/images/eatin.png");
+  background-image: url("images/eatin.png");
 }
 
 /*Menu**/
@@ -859,7 +859,7 @@ figure.wp-container-4 {
 
 .p-maintop {
   height: 230px;
-  background-image: url("/wp-content/themes/template_taka/images/tophead_full.png");
+  background-image: url("images/tophead_full.png");
   background-size: cover;
   background-attachment: scroll;
 }
