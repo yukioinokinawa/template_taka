@@ -57,6 +57,17 @@ header {
             height: 4rem;
         }
 
+        &::before {
+            content: "";
+            width: 3rem;
+            height: 3rem;
+            background: url("../images/glass.png") no-repeat center center/ auto 100%;
+            display: inline-block;
+            position: absolute;
+            top: 8px;
+            left: 4rem;
+        }
+
         .inp-hom {
             height: 4.6rem;
             width: 19.2rem;
@@ -91,6 +102,16 @@ header {
             display: inline-block;
             position: relative;
 
+            &::before {
+                content: "";
+                width: 3rem;
+                height: 3rem;
+                background: url("../images/glass.png") no-repeat center center/ auto 100%;
+                display: inline-block;
+                position: absolute;
+                top: 8px;
+                left: 6rem;
+            }
 
             .inp-hom {
                 width: 32.4rem;
@@ -124,6 +145,16 @@ header {
                 display: inline-block;
                 position: relative;
 
+                &::before {
+                    content: "";
+                    width: 3rem;
+                    height: 3rem;
+                    background: url("../images/glass.png") no-repeat center center/ auto 100%;
+                    display: inline-block;
+                    position: absolute;
+                    top: 8px;
+                    left: 6rem;
+                }
 
                 .inp-hom {
                     width: 32.4rem;
@@ -153,45 +184,6 @@ header {
 
         }
 
-        .search::before {
-            content: "";
-            width: 3rem;
-            height: 3rem;
-            background: url("/wp-content/themes/template_taka/images/glass.png") no-repeat center center/ auto 100%;
-            display: inline-block;
-            position: absolute;
-            top: 8px;
-            left: 4rem;
-        }
 
-        @media screen and(min-width:560px) {
-            .search::before {
-                content: "";
-                width: 3rem;
-                height: 3rem;
-                background: url("/wp-content/themes/template_taka/images/glass.png") no-repeat center center/ auto 100%;
-                display: inline-block;
-                position: absolute;
-                top: 8px;
-                left: 4rem;
-            }
-        }
-
-        @media screen and(min-width:960px) {
-            .search::before {
-                content: "";
-                width: 3rem;
-                height: 3rem;
-                background: url("/wp-content/themes/template_taka/images/glass.png") no-repeat center center/ auto 100%;
-                display: inline-block;
-                position: absolute;
-                top: 8px;
-                left: 4rem;
-            }
-        }
     }
-
-
-
-
 }
