@@ -10,6 +10,7 @@ function custom_theme_support()
         'caption',
     ));
     add_theme_support('post-thumbnails');
+    add_theme_support('automatic-feed-links');
     add_theme_support('title-tag');
     register_nav_menus(array(
         'footer_nav' => esc_html__('footer navigation', 'template_taka'),

@@ -16,7 +16,7 @@
      <!--Top-->
 
      <div class="l-main">
-         <div class="p-single__wrapper">
+         <div class="p-single__wrapper" <?php post_class(); ?>>
              <article class="p-single">
                  <article class="p-single__intro">
                      <h2><?php the_title(); ?></h2>
@@ -30,6 +30,7 @@
                             the_post(); ?>
 
                          <?php the_content(); ?>
+                         <?php wp_link_pages($args); ?>
                      <?php endwhile;
                     else :
                         ?> <p>表示する記事がありません</p><?php

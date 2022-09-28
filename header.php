@@ -10,6 +10,7 @@
 </head>
 
 <body <?php body_class(); ?>>
+    <?php wp_body_open(); ?>
     <div class="f-bace__container">
         <div class="l-main">
             <header>
@@ -19,7 +20,7 @@
                 </button>
 
                 <div class="l-header">
-                    <a href="<?php echo home_url('/'); ?>"><?php bloginfo('name'); ?></a>
+                    <a href="<?php echo esc_url('/'); ?>"><?php bloginfo('name'); ?></a>
                     <?php get_search_form(); ?>
                 </div>
             </header>

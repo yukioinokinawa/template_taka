@@ -2,6 +2,7 @@
 Theme Name: template_taka
 Description: テーマ開発練習用テーマ
 Version: 1.0.0
+Requires PHP: 7.4.1
 Theme URI: https: //github.com/yukioinokinawa/template_taka
 Author: Taka
 Author URI: 
@@ -9,4 +10,5 @@ Tags: right-sidebar, blog
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: template_taka
+Tested up to: 6.0.2
 */

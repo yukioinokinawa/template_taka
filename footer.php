@@ -1,5 +1,8 @@
 <footer>
-    <?php wp_nav_menu(array('menu' => 'footer')); ?>
+    <?php wp_nav_menu(array(
+        'theme_location' => 'footer_nav',
+        'menu' => 'footer'
+    )); ?>
     <small>Copyright: Raise Tech</small>
     <?php wp_footer(); ?>
 </footer>
