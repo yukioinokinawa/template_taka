@@ -30,7 +30,6 @@
                             the_post(); ?>
 
                          <?php the_content(); ?>
-                         <?php wp_link_pages($args); ?>
                      <?php endwhile;
                     else :
                         ?> <p>表示する記事がありません</p><?php
