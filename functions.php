@@ -28,7 +28,7 @@ function theme_script()
     wp_enqueue_style('ress', 'https://unpkg.com/ress/dist/ress.min.css', array(), "");
     wp_enqueue_style('mplus', '//fonts.googleapis.com/css2?family=M+PLUS+1:wght@400;700&display=swap', array(), '');
     wp_enqueue_style('roboto', '//fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"', array(), '');
-    wp_enqueue_style('template_taka', get_template_directory_uri() . '/SASS/style.css', array(), '1.0.0');
+    wp_enqueue_style('template_taka', get_template_directory_uri() . '/CSS/style.css', array(), '1.0.0');
     wp_enqueue_script('jquery');
     wp_enqueue_script('bundle', get_theme_file_uri('/js/menu.js'), 'jquery', '', true);
 }
