@@ -912,7 +912,7 @@ figure.wp-container-4 {
 /*archivetop**/
 .p-archivetop {
   height: 230px;
-  background-image: url("/wp-content/themes/template_taka/images/takeout.png");
+  background-image: url("../images/takeout.png");
   background-position: center;
   background-size: cover;
   background-attachment: scroll;

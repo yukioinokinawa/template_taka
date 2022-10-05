@@ -19,7 +19,7 @@
                 <h1><?php single_cat_title(); ?></h1>
                 <p><?php echo category_description(); ?></p>
             </article>
-            <?php get_template_part('component/archive'); ?>
+            <?php get_template_part('./component/archive'); ?>
         </article>
     </div>
 
