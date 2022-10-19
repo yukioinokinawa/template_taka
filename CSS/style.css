@@ -605,6 +605,7 @@ header .searchform .but-inp-hom {
 @media screen and (min-width: 560px) {
   .c-card__wrapper {
     display: flex;
+    margin: 2rem 4rem;
   }
   .c-card__wrapper .c-card__imgbox {
     width: 50%;
@@ -617,8 +618,8 @@ header .searchform .but-inp-hom {
   }
 }
 @media screen and (min-width: 960px) {
-  .c-card__wrapper .c-card__inner {
-    padding-left: 6rem;
+  .c-card__wrapper {
+    margin: 3rem 10rem;
   }
   .c-card__wrapper .c-card__inner > h2 {
     font-size: 3rem;
@@ -841,6 +842,9 @@ figure.wp-container-4 {
 .p-archive {
   background-color: #FFF;
 }
+.p-archive__intro {
+  margin: 3rem 2rem;
+}
 .p-archive__intro > h1 {
   color: #3C2A10;
   font-size: 2.8rem;
@@ -850,6 +854,25 @@ figure.wp-container-4 {
 }
 .p-archive__intro > p {
   margin: 0 2rem;
+}
+@media screen and (min-width: 560px) {
+  .p-archive__intro {
+    margin: 3.6rem 4.2rem 2.5rem 4.2rem;
+  }
+  .p-archive__intro > p {
+    margin: 0 4rem 0 2rem;
+  }
+}
+@media screen and (min-width: 960px) {
+  .p-archive__intro {
+    margin: 6rem 10rem 7rem 10rem;
+  }
+  .p-archive__intro > h1 {
+    padding: 3rem 0 3rem 4rem;
+  }
+  .p-archive__intro > p {
+    margin: 0 10rem 0 4rem;
+  }
 }
 
 .p-maintop {
@@ -1070,7 +1093,7 @@ figure.wp-container-4 {
 }
 @media screen and (min-width: 560px) {
   .p-single__wrapper {
-    margin: 6rem;
+    margin: 6rem 10rem;
   }
 }
 
@@ -1111,8 +1134,9 @@ figure.wp-container-4 {
   color: #707070;
   border: solid 1px #707070;
   list-style: none;
-  padding: 8px 15px;
-  margin: 0 2px;
+  line-height: 35px;
+  padding: 0 12px;
+  margin: 0 10px;
 }
 .wp-pagenavi a:hover,
 .wp-pagenavi span.current {
@@ -1136,7 +1160,7 @@ span.pages {
   .wp-pagenavi {
     display: flex;
     justify-content: center;
-    margin: 3rem 2rem;
+    margin: 10rem 2rem 3rem 2rem;
   }
   .wp-pagenavi a,
 .wp-pagenavi span {
@@ -1145,14 +1169,19 @@ span.pages {
     color: #707070;
     border: solid 1px #707070;
     list-style: none;
-    padding: 8px 15px;
-    margin: 0 2px;
   }
   .wp-pagenavi a:hover,
 .wp-pagenavi span.current {
     color: #FFF;
     background-color: #3C2B1C;
     border-color: #3C2B1C;
+  }
+  .wp-pagenavi .current,
+.wp-pagenavi .larger,
+.wp-pagenavi .smaller {
+    height: 35px;
+    width: 35px;
+    margin: 0 10px;
   }
   a.page,
 span.current,
@@ -1163,6 +1192,11 @@ span.pages {
 a.nextpostslink,
 a.previouspostslink {
     border: none;
+  }
+}
+@media screen and (min-width: 960px) {
+  .wp-pagenavi {
+    margin: 15rem 2rem 6rem 2rem;
   }
 }
 .u-list {

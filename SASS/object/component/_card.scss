@@ -59,6 +59,7 @@
 
         @media screen and(min-width:560px) {
             display: flex;
+            margin: 2rem 4rem;
 
             .c-card__imgbox {
                 width: calc(100% / 2);
@@ -74,8 +75,9 @@
         }
 
         @media screen and (min-width:960px) {
+            margin: 3rem 10rem;
+
             .c-card__inner {
-                padding-left: 6rem;
 
                 >h2 {
                     font-size: 3rem;

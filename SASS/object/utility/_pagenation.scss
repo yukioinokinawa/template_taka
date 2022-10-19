@@ -12,8 +12,9 @@
         color: #707070;
         border: solid 1px #707070;
         list-style: none;
-        padding: 8px 15px;
-        margin: 0 2px;
+        line-height: 35px;
+        padding: 0 12px;
+        margin: 0 10px;
     }
 
     a:hover,
@@ -39,7 +40,7 @@ span.pages {
     .wp-pagenavi {
         display: flex;
         justify-content: center;
-        margin: 3rem 2rem;
+        margin: 10rem 2rem 3rem 2rem;
 
         a,
         span {
@@ -48,8 +49,6 @@ span.pages {
             color: #707070;
             border: solid 1px #707070;
             list-style: none;
-            padding: 8px 15px;
-            margin: 0 2px;
         }
 
         a:hover,
@@ -57,6 +56,14 @@ span.pages {
             color: #FFF;
             background-color: #3C2B1C;
             border-color: #3C2B1C;
+        }
+
+        .current,
+        .larger,
+        .smaller {
+            height: 35px;
+            width: 35px;
+            margin: 0 10px
         }
     }
 
@@ -71,5 +78,11 @@ span.pages {
     a.nextpostslink,
     a.previouspostslink {
         border: none;
+    }
+}
+
+@media screen and(min-width:960px) {
+    .wp-pagenavi {
+        margin: 15rem 2rem 6rem 2rem;
     }
 }
