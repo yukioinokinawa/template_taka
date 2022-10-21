@@ -273,7 +273,7 @@ header .searchform .inp-hom {
   width: 23rem;
   border-radius: 10px;
   background-color: #FFFfff;
-  padding-left: 1.2rem;
+  padding-left: 5rem;
   border: 1px solid;
   border-color: #707070;
   font-family: "M+1";
@@ -853,27 +853,33 @@ figure.wp-container-4 {
 .p-mainblock__a-wrapper article {
   background-color: rgba(255, 255, 255, 0.7);
   min-height: 120px;
+  padding: 7px 10px 15px 10px;
+}
+@media screen and (min-width: 560px) {
+  .p-mainblock__a-wrapper article {
+    padding: 7px 15px 15px 15px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .p-mainblock__a-wrapper article {
+    padding: 12px 20px 20px 20px;
+  }
 }
 .p-mainblock__a-wrapper article h2 {
   font-size: 2.2rem;
   font-weight: bold;
   color: #3C2A10;
-  padding: 5px;
+  padding-top: inherit;
 }
 .p-mainblock__a-wrapper article p {
   font-size: 1.6rem;
   font-weight: normal;
   color: #3C2A10;
-  padding: 15px 10px;
-}
-@media screen and (min-width: 560px) {
-  .p-mainblock__a-wrapper article p {
-    padding: 15px;
-  }
+  padding-top: 3px;
 }
 @media screen and (min-width: 960px) {
   .p-mainblock__a-wrapper article p {
-    padding: 20px;
+    padding-top: 9px;
   }
 }
 @media screen and (min-width: 560px) {
@@ -926,6 +932,19 @@ figure.wp-container-4 {
   }
   .p-archive__intro > p {
     margin: 0 10rem 0 4rem;
+  }
+}
+.p-archive__404 {
+  margin: 0 0 5rem 3rem;
+}
+@media screen and (min-width: 560px) {
+  .p-archive__404 {
+    margin: 0 0 5rem 4.2rem;
+  }
+}
+@media screen and (min-width: 960px) {
+  .p-archive__404 {
+    margin: 0 0 5rem 10rem;
   }
 }
 

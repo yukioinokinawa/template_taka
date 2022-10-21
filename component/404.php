@@ -17,7 +17,7 @@
 <div class="l-main">
     <div class="p-archive__wrapper">
         <article class="p-archive">
-            <p>こちらのページはただいま表示できません</p>
+            <p class="p-archive__404">こちらのページはただいま表示できません</p>
         </article>
     </div>
 

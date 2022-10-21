@@ -25,5 +25,5 @@
                     </article>
                 <?php endwhile;
             else :
-                ?> <p>表示する記事がありません</p><?php
-                                    endif; ?>
+                ?> <p class="p-archive__404">表示する記事がありません</p><?php
+                                                            endif; ?>

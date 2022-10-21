@@ -46,26 +46,32 @@
         article {
             background-color: rgba(255, 255, 255, 0.7);
             min-height: 120px;
+            padding: 7px 10px 15px 10px;
+
+            @media screen and (min-width:560px) {
+                padding: 7px 15px 15px 15px;
+            }
+
+            @media screen and (min-width:960px) {
+                padding: 12px 20px 20px 20px;
+            }
 
             h2 {
                 font-size: 2.2rem;
                 font-weight: bold;
                 color: #3C2A10;
-                padding: 5px;
+                padding-top: inherit;
             }
 
             p {
                 font-size: 1.6rem;
                 font-weight: normal;
                 color: #3C2A10;
-                padding: 15px 10px;
+                padding-top: 3px;
 
-                @media screen and (min-width:560px) {
-                    padding: 15px;
-                }
 
                 @media screen and (min-width:960px) {
-                    padding: 20px;
+                    padding-top: 9px;
                 }
             }
         }
