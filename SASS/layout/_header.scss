@@ -41,6 +41,7 @@ header {
 
             >a {
                 font-size: 6rem;
+                margin-left: 6rem;
             }
         }
     }
@@ -59,21 +60,21 @@ header {
 
         &::before {
             content: "";
-            width: 3rem;
-            height: 3rem;
+            width: 2.4rem;
+            height: 2.4rem;
             background: url("../images/glass.png") no-repeat center center/ auto 100%;
             display: inline-block;
             position: absolute;
-            top: 8px;
-            left: 4rem;
+            top: 11px;
+            left: 1.6rem;
         }
 
         .inp-hom {
             height: 4.6rem;
-            width: 19.2rem;
+            width: 23rem;
             border-radius: 10px;
             background-color: #FFFfff;
-            padding-left: 5rem;
+            padding-left: 1.2rem;
             border: 1px solid;
             border-color: #707070;
             font-family: "M+1";
@@ -83,7 +84,7 @@ header {
 
         .but-inp-hom {
             height: 4.6rem;
-            width: 6.4rem;
+            width: 7rem;
             border-radius: 10px;
             margin-left: 1rem;
             background-color: #F2EDE9;
@@ -97,19 +98,19 @@ header {
         @media screen and(min-width:560px) {
 
             height: 4rem;
-            width: 54rem;
+            width: 54.6rem;
             margin-left: 20px;
             display: inline-block;
             position: relative;
 
             &::before {
                 content: "";
-                width: 3rem;
-                height: 3rem;
+                width: 2.5rem;
+                height: 2.5rem;
                 background: url("../images/glass.png") no-repeat center center/ auto 100%;
                 display: inline-block;
                 position: absolute;
-                top: 8px;
+                top: 11px;
                 left: 6rem;
             }
 
@@ -147,12 +148,12 @@ header {
 
                 &::before {
                     content: "";
-                    width: 3rem;
-                    height: 3rem;
+                    width: 2.5rem;
+                    height: 2.5rem;
                     background: url("../images/glass.png") no-repeat center center/ auto 100%;
                     display: inline-block;
                     position: absolute;
-                    top: 8px;
+                    top: 11px;
                     left: 6rem;
                 }
 

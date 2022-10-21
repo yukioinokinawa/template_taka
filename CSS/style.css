@@ -68,7 +68,7 @@ p {
 }
 
 ol {
-  padding-left: 2rem;
+  padding: 2rem 0 0 2rem;
 }
 ol li ol {
   padding-left: 3rem;
@@ -76,7 +76,7 @@ ol li ol {
 
 ul {
   list-style: none;
-  padding-left: 2rem;
+  padding: 2rem 0 0 2rem;
 }
 ul li ul li {
   padding-left: 3rem;
@@ -135,6 +135,19 @@ table > tbody > tr > td {
   font-weight: 400;
   padding-left: 2rem;
   height: 7rem;
+}
+table > tbody > tr > td:first-child {
+  width: 13.5rem;
+}
+@media screen and (min-width: 560px) {
+  table > tbody > tr > td:first-child {
+    width: 21rem;
+  }
+}
+@media screen and (min-width: 960px) {
+  table > tbody > tr > td:first-child {
+    width: 42rem;
+  }
 }
 
 code {
@@ -231,6 +244,7 @@ header .l-header > a {
   }
   header .l-header > a {
     font-size: 6rem;
+    margin-left: 6rem;
   }
 }
 header .searchform {
@@ -246,20 +260,20 @@ header .searchform .inp-hom .but-inp-hom {
 }
 header .searchform::before {
   content: "";
-  width: 3rem;
-  height: 3rem;
+  width: 2.4rem;
+  height: 2.4rem;
   background: url("../images/glass.png") no-repeat center center/auto 100%;
   display: inline-block;
   position: absolute;
-  top: 8px;
-  left: 4rem;
+  top: 11px;
+  left: 1.6rem;
 }
 header .searchform .inp-hom {
   height: 4.6rem;
-  width: 19.2rem;
+  width: 23rem;
   border-radius: 10px;
   background-color: #FFFfff;
-  padding-left: 5rem;
+  padding-left: 1.2rem;
   border: 1px solid;
   border-color: #707070;
   font-family: "M+1";
@@ -268,7 +282,7 @@ header .searchform .inp-hom {
 }
 header .searchform .but-inp-hom {
   height: 4.6rem;
-  width: 6.4rem;
+  width: 7rem;
   border-radius: 10px;
   margin-left: 1rem;
   background-color: #F2EDE9;
@@ -281,19 +295,19 @@ header .searchform .but-inp-hom {
 @media screen and (min-width: 560px) {
   header .searchform {
     height: 4rem;
-    width: 54rem;
+    width: 54.6rem;
     margin-left: 20px;
     display: inline-block;
     position: relative;
   }
   header .searchform::before {
     content: "";
-    width: 3rem;
-    height: 3rem;
+    width: 2.5rem;
+    height: 2.5rem;
     background: url("../images/glass.png") no-repeat center center/auto 100%;
     display: inline-block;
     position: absolute;
-    top: 8px;
+    top: 11px;
     left: 6rem;
   }
   header .searchform .inp-hom {
@@ -327,12 +341,12 @@ header .searchform .but-inp-hom {
   }
   header .searchform .searchform::before {
     content: "";
-    width: 3rem;
-    height: 3rem;
+    width: 2.5rem;
+    height: 2.5rem;
     background: url("../images/glass.png") no-repeat center center/auto 100%;
     display: inline-block;
     position: absolute;
-    top: 8px;
+    top: 11px;
     left: 6rem;
   }
   header .searchform .searchform .inp-hom {
@@ -398,14 +412,31 @@ header .searchform .but-inp-hom {
 .l-nav__body ul {
   font-size: 2.4rem;
   font-weight: bold;
-  padding-left: 3rem;
   margin: 2.5rem 0;
+  padding: inherit;
 }
 .l-nav__body li {
   list-style: none;
   font-size: 2rem;
   font-weight: normal;
   margin: 1.5rem 0;
+}
+.l-nav__body .menu-item-object-category {
+  font-weight: bold;
+}
+.l-nav__body .menu {
+  margin-left: 4.5rem;
+  font-family: "M+PLUS+1p";
+}
+.l-nav__body .menu a:link,
+.l-nav__body .menu a:visited,
+.l-nav__body .menu a:hover,
+.l-nav__body .menu a:active {
+  color: #707070;
+}
+.l-nav__body .sub-menu {
+  margin: 4rem 2rem;
+  font-size: 2.4rem;
 }
 @media screen and (min-width: 960px) {
   .l-nav {
@@ -527,11 +558,9 @@ header .searchform .but-inp-hom {
 .c-backimg1 {
   background-image: url("../images/takeout.png");
 }
-
 .c-backimg2 {
   background-image: url("../images/eatin.png");
 }
-
 /*Menu**/
 .c-menubutton {
   display: block;
@@ -782,6 +811,11 @@ figure.wp-container-4 {
     display: flex;
   }
 }
+@media screen and (min-width: 960px) {
+  .p-mainblock__wrapper {
+    margin: 120px 110px 120px 30px;
+  }
+}
 
 .p-mainblock {
   min-height: 64rem;
@@ -830,7 +864,27 @@ figure.wp-container-4 {
   font-size: 1.6rem;
   font-weight: normal;
   color: #3C2A10;
-  padding: 5px;
+  padding: 15px 10px;
+}
+@media screen and (min-width: 560px) {
+  .p-mainblock__a-wrapper article p {
+    padding: 15px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .p-mainblock__a-wrapper article p {
+    padding: 20px;
+  }
+}
+@media screen and (min-width: 560px) {
+  .p-mainblock {
+    margin: 40px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .p-mainblock {
+    margin: 0 0 0 80px;
+  }
 }
 @media screen and (min-width: 600px) {
   .p-mainblock {

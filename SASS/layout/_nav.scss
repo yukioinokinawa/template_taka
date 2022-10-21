@@ -28,8 +28,8 @@
         ul {
             font-size: 2.4rem;
             font-weight: bold;
-            padding-left: 3rem;
             margin: 2.5rem 0;
+            padding: inherit;
         }
 
         li {
@@ -38,6 +38,28 @@
             font-weight: normal;
             //padding-left: 4rem;
             margin: 1.5rem 0;
+
+        }
+
+        .menu-item-object-category {
+            font-weight: bold;
+        }
+
+        .menu {
+            margin-left: 4.5rem;
+            font-family: "M+PLUS+1p";
+
+            a:link,
+            a:visited,
+            a:hover,
+            a:active {
+                color: #707070;
+            }
+        }
+
+        .sub-menu {
+            margin: 4rem 2rem;
+            font-size: 2.4rem;
         }
 
     }

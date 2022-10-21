@@ -72,7 +72,7 @@ p {
 }
 
 ol {
-	padding-left: 2rem;
+	padding: 2rem 0 0 2rem;
 
 	li {
 
@@ -84,7 +84,7 @@ ol {
 
 ul {
 	list-style: none;
-	padding-left: 2rem;
+	padding: 2rem 0 0 2rem;
 
 	li {
 
@@ -159,6 +159,18 @@ table {
 				font-weight: 400;
 				padding-left: 2rem;
 				height: 7rem;
+
+				&:first-child {
+					width: 13.5rem;
+
+					@media screen and (min-width: 560px) {
+						width: 21rem
+					}
+
+					@media screen and(min-width:960px) {
+						width: 42rem
+					}
+				}
 			}
 		}
 	}
